@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, LockScreenAppActivity!</string>
+    <string name="app_name">LockScreenApp</string>
+    <string name="unloack">Unlock</string>
+    <color name="mycolor1">#F5DC49</color>
+  	<string name="label_create_gesture">Create a gesture</string>
+   	<string name="btn_help_close">Close Help</string>
+	 <!-- Label, button used to add a gesture -->
+    <string name="button_add">Add gesture</string>
+    <!-- Label, button used to reload all gestures -->
+    <string name="button_reload">Reload</string>
+    <!-- Label, button used to cancel the operation of adding a gesture -->
+    <string name="button_discard">Discard</string>
+    <!-- Label, button used to save a gesture newly created -->
+    <string name="button_done">Done</string>   
+    <!-- Label, prompt asking the user to enter the name of the gesture -->
+    <string name="prompt_gesture_name">Name</string>
+    <!-- Error message, informs the user he needs to enter a name before saving a gesture -->
+    <string name="error_missing_name">You must enter a name</string>
+    <!-- success message, tells the user where the gesture was saved -->
+    <string name="save_success">Gesture saved in %s</string>
+    <!-- Buttons in Rename gesture dialog box -->
+    <string name="rename_action">OK</string>
+    <!-- Buttons in Rename gesture dialog box -->
+    <string name="cancel_action">Cancel</string>
+    <!-- Message displayed when the user opens the gestures settings screen -->
+    <string name="gestures_loading">Loading gestures</string>
+    <!-- Message displayed when the user has no gestures -->
+    <string name="gestures_empty">No gestures</string>
+    <!-- Title of the screen used to view/manage gestures -->
+    <string name="gestures_activity">Gestures</string>
+    <!-- Noun, menu item used to rename a gesture -->
+    <string name="gestures_rename">Rename</string>
+    <!-- Noun, menu item used to remove a gesture -->
+    <string name="gestures_delete">Delete</string>
+    <!-- Message displayed when a gesture is successfully deleted -->
+    <string name="gestures_delete_success">Gesture deleted</string>
+    <!-- Title of dialog box -->
+    <string name="gestures_rename_title">Rename gesture</string>
+    <!-- Label of gesture name field in Rename gesture dialog box -->
+    <string name="gestures_rename_label">Gesture name</string>
+    <!-- Message, displayed when the sdcard cannot be found, 1st parameter is the name of the file that stores the gestures -->
+    <string name="gestures_error_loading">Could not load %s. Make sure you have a mounted SD card.</string>
+    <string name="rkt_gestures_menu_clear">Clear screen</string>
+    <string name="rkt_gestures_menu_save">Save gesture</string>
+    
+    <string name="programs_btn_settings">Settings</string>
+    <string name="programs_btn_about">About</string>
+    <string name="programs_btn_share">Share with friends</string>
+
+    <string name="settings_rb_low_security">Low Security</string>
+    <string name="settings_rb_high_security">High Security *</string>
+    <string name="settings_btn_ok">OK</string>
+    <string name="settings_btn_set_pin">Set PIN</string>
+    <string name="settings_tv_sound">Sound</string>
+    <string name="settings_tv_high_security_tutorial">* This explains what high security does. So... yeah. It is pretty secure and stuff.</string>
+    
+    <string name="tutorial_btn_next">NEXT</string>
+   
+    <string name="tutorial_tv_activate_lock">Press HOME button now, select RKTLauncher then press Always.</string>       
+    <string name="tutorial_tv_activate_after_launcher">Then select the launcher to continue.</string>
+    
+    <string name="tutorial_tv_done">&lt;b>First step done:&lt;/b> Now we need to disabel the generic loc and learn how to use it.</string>    
+    <string name="tutorial_tv_settings">&lt;b>Settings:&lt;/b> On your Android, set your lock screen to none. Go to your Setting -> Security -> Lock Screen -> None.</string>
+    <string name="tutorial_tv_tutorial">&lt;b>Tutorial:&lt;/b> Choose an application and record a gesture. Then lock the phone and draw the application to open it.</string>
+    
+    <string name="tutorial_tv_low_security">&lt;b>1. Low Security&lt;/b>&lt;br/>Your custom gestures open applications.&lt;br/>A - dash gesture anywhere unlocks all.&lt;br/>A ? help gesture show your recorded gestures.</string>
+    <string name="tutorial_tv_high_security">&lt;b>2. High Security&lt;/b>&lt;br/>Security enabled, now access.&lt;br/>Set a pin and an unlock all gesture. The pin will be asked when using the help ?.&lt;br/>Optional gesture position for each gesture. </string>
+    <string name="tutorial_tv_no_show">Do not show this tutorial any more</string>
+    <string name="tutorial_tv_activate_lock_screen">Activate Lock Screen</string>
+    
+    <string name="about_rm_link"><a href="http://roamtouch.com">http://roamtouch.com</a></string>
+    <string name="about_gk_link"><a href="http://gesturekit.com">http://gesturekit.com</a></string>
+    
+    <string name="strict_tv_position">Maintain gesture position</string>
+    <string name="strict_tv_description">If you enable maintain gesture position the gesture will only be recognized if you do it in the same position within the screen. This way you could use a same gesture at different positions</string>
+    <string name="strict_tv_how_to">"Unlock your phone the way you want to. Create your own gestures to launch your apps"</string>
+    <string name="done_tv">The gesture has been recorded. Close this screen and lock your phone in order to draw the gesture and launch apps.</string>
+</resources>

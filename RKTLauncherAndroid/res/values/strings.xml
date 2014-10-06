@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, LockScreenAppActivity!</string>
+    <string name="app_name">RKTLauncher</string>
+    <string name="unloack">Unlock</string>
+    <color name="mycolor1">#000000</color>
+<string name="btn_help_close">Close Help</string>
+
+	<string name="facebook_app_id">668713519884477</string>
+
+</resources>

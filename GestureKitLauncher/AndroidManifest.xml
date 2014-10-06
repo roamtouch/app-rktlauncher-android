@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.roamtouch.gesturekit.rktlauncherandroid"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_2_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"> 
+        
+      
+<!--              <activity
+            android:name="com.gesturekit.rktlauncher.recording.ProgramsGestures"
+           	android:theme="@android:style/Theme.Black.NoTitleBar" >    
+        </activity>     
+        
+       <activity
+            android:name="com.gesturekit.rktlauncher.recording.RKTGesturesRecording"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >    
+        </activity>      -->
+         
+    </application>
+    
+    
+
+</manifest>

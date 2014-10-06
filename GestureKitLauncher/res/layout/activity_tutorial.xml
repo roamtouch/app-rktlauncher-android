@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/tutorial_rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >      
+        
+        <!-- GK LOGO -->
+        <ImageView 
+            android:id="@+id/gk_tutorial_iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/gk_logo"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />      
+        
+         <!-- ACTIVATE LOCK -->  
+         <TextView
+            android:id="@+id/tutorial_lock"
+            style="@style/tvStyleTutorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gk_tutorial_iv_logo"
+            android:text="@string/tutorial_tv_activate_lock"
+            android:visibility="gone" />
+         
+          <ImageView 
+            android:id="@+id/tutorial_lock_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/set_lock"
+            android:layout_below="@id/tutorial_lock"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+          
+        <!-- SELECT RKT LAUNCHER -->  
+        <TextView
+            android:id="@+id/tutorial_tv_activate_launcher"
+            style="@style/tvStyleTutorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tutorial_lock_image"
+            android:text="@string/tutorial_tv_activate_after_launcher"
+            android:visibility="gone" />   
+            
+          <ImageView 
+            android:id="@+id/tutorial_launcher_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/set_launcher"
+            android:layout_below="@id/tutorial_tv_activate_launcher"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>       
+          
+        <!-- RKT LOGO -->
+        <ImageView 
+            android:id="@+id/rkt_tutorial_iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/rkt_logo"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+        
+       <!-- DONE --> 
+        <TextView
+            android:id="@+id/tutorial_tv_done"
+            style="@style/tvStyleTutorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rkt_tutorial_iv_logo"
+            android:text="@string/tutorial_tv_done"
+            android:visibility="gone" /> 
+          
+         <!-- SETTINGS --> 
+         <TextView
+            android:id="@+id/tutorial_tv_settings"
+            style="@style/tvStyleTutorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tutorial_tv_done"
+            android:text="@string/tutorial_tv_settings"
+            android:visibility="gone" /> 
+          
+         <!-- TUTORIAL --> 
+         <TextView
+            android:id="@+id/tutorial_tv_tutorial"
+            style="@style/tvStyleTutorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tutorial_tv_settings"
+            android:text="@string/tutorial_tv_tutorial"
+            android:visibility="gone"  /> 
+            
+         <!-- LOW SECURITY -->
+         <!--  <TextView
+            android:id="@+id/tutorial_tv_lowsecurity"
+            style="@style/tvStyleTutorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tutorial_tv_tutorial"
+            android:text="@string/tutorial_tv_low_security"
+            android:visibility="gone" /> -->
+       
+          <!-- HEIGHT SECURITY -->
+          <!-- <TextView
+            android:id="@+id/tutorial_tv_height_security"
+            style="@style/tvStyleTutorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tutorial_tv_lowsecurity"
+            android:text="@string/tutorial_tv_low_security"
+            android:visibility="gone" /> -->
+         
+          <!-- CHECKBOX  -->
+          <RelativeLayout
+            android:id="@+id/tutorial_rl_check_start_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tutorial_tv_tutorial"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tutorial_tv_start_now"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="@string/tutorial_tv_activate_lock_screen"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/tutorial_checkbox_start_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:checked="true" />
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tutorial_rl_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tutorial_rl_check_start_now" 
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tutorial_tv_no_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="@string/tutorial_tv_no_show"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/tutorial_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/tutorial_btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tutorial_rl_check"
+            android:layout_margin="5dp"
+            android:text="@string/tutorial_btn_next"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</ScrollView>

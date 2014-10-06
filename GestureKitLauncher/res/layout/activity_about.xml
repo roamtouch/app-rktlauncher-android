@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/about_btn_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/settings_btn_ok" />
+
+    <ScrollView
+        android:id="@+id/about_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/about_btn_close" >
+        
+        <RelativeLayout 
+            android:id="@+id/about_rl_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            
+            <TextView 
+                android:id="@+id/about_tv_powered_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="Powered by"/>
+            
+            <ImageView 
+                android:id="@+id/about_iv_roamtouch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/about_tv_powered_by"
+                android:src="@drawable/roamtouch_logo"/>
+            
+            <TextView 
+                android:id="@+id/about_tv_roamtouch_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/about_iv_roamtouch"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColorLink="#6fa8dc"
+                android:text="@string/about_rm_link"/>
+            
+            <TextView 
+                android:id="@+id/about_tv_developed_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/about_tv_roamtouch_link"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="Developed by"/>
+            
+            <ImageView 
+                android:id="@+id/about_iv_gesturekit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/about_tv_developed_by"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/gk_logo"/>
+            
+             <TextView 
+                android:id="@+id/about_tv_tech"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/about_iv_gesturekit"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="technology"/>
+            
+            <TextView 
+                android:id="@+id/about_tv_gesturekit_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/about_tv_tech"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColorLink="#6fa8dc"
+                android:text="@string/about_gk_link"/>
+            
+            
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

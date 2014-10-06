@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.roamtouch.gesturekit.rktlauncher"
+    android:versionCode="8"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" 
+        android:maxSdkVersion="19" />
+	
+    <!-- GestureKit permissions -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <!-- RKT Launcher Permissions -->    
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.front" android:required="false" />    
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+	<uses-permission android:name="android.permission.GET_TASKS"/>
+	<uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+
+    <application
+        android:name=".RKTApplication"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_2_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true" >
+        <activity
+            android:name="com.roamtouch.gesturekit.rktlauncher.RKTLauncher"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:excludeFromRecents="true"
+            android:stateNotNeeded="true"
+             android:noHistory="true"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.roamtouch.gesturekit.rktlauncher.LockScreenActivity"
+            android:launchMode="singleTask"
+            android:excludeFromRecents="true"
+            android:stateNotNeeded="true"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar">
+<!--             <intent-filter> -->
+<!--             	<action android:name="android.intent.action.MAIN" />  -->
+<!--                  <category android:name="android.intent.category.HOME" /> -->
+<!--               <category android:name="android.intent.category.DEFAULT" />     -->
+<!--             </intent-filter> -->
+            
+        </activity>
+        <activity
+            android:name="com.roamtouch.gesturekit.rktlauncher.ApplicationsGestures"
+            android:theme="@style/Theme.Transparent"
+            android:excludeFromRecents="true" >
+        </activity>
+        <activity
+            android:name="com.roamtouch.gesturekit.rktlauncher.MainRKTGestures"
+            android:theme="@style/Theme.Transparent" 
+            android:excludeFromRecents="true">
+        </activity>
+        <activity
+            android:name="com.roamtouch.gesturekit.rktlauncher.activities.ProgramsGesturesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" 
+            android:excludeFromRecents="true">
+        </activity>
+        <activity
+            android:name="com.roamtouch.gesturekit.rktlauncher.activities.RKTGesturesRecordingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" 
+            android:excludeFromRecents="true">
+        </activity>
+        <activity
+            android:name="com.roamtouch.gesturekit.rktlauncher.activities.StrictModeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" 
+            android:excludeFromRecents="true">
+        </activity>
+        <activity
+            android:name="com.roamtouch.gesturekit.rktlauncher.activities.DoneRecordingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:excludeFromRecents="true" >
+        </activity>
+        <activity
+            android:name="com.roamtouch.gesturekit.rktlauncher.activities.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.roamtouch.gesturekit.rktlauncher.activities.EnterPINActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.roamtouch.gesturekit.rktlauncher.activities.TutorialActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.roamtouch.gesturekit.rktlauncher.activities.AboutActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <service android:name="com.roamtouch.gesturekit.communications.GestureKitService" >
+        </service>
+        <service android:name="com.roamtouch.gesturekit.rktlauncher.service.ScreenService" />
+
+        <receiver android:name="com.roamtouch.gesturekit.rktlauncher.receiver.ScreenReceiver" />
+        <receiver
+            android:name="com.roamtouch.gesturekit.rktlauncher.receiver.BootReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.roamtouch.gesturekit.rktlauncher.particles.Particle" >
+            <intent-filter>
+                <action android:name="BREAK_PARTICLES" >
+                </action>
+                <action android:name="STOP_BREAK_PARTICLES" >
+                </action>
+                <action android:name="VANISH_PARTICLES" >
+                </action>
+                <action android:name="STOP_VANISH_PARTICLES" >
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        
+        
+         <activity
+            android:name="com.roamtouch.gesturekit.rktlauncher.HomeTrackerActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:excludeFromRecents="true"
+            android:stateNotNeeded="true"
+            android:noHistory="true"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoDisplay" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.MONKEY" />
+            </intent-filter>
+        </activity>
+        
+    </application>
+
+</manifest>

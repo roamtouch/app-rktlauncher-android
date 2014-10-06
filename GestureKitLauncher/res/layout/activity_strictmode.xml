@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/tutorial_iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/gk_logo" />
+
+    <TextView
+        android:id="@+id/strict_tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tutorial_iv_logo"
+        android:gravity="center"
+        android:text="@string/strict_tv_description"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/strict_tv_how_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/strict_tv_description"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/strict_tv_how_to"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/strict_rl_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/strict_tv_how_to"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/strict_tv_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/strict_tv_position"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/strict_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/strict_btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:text="@string/settings_btn_ok" />
+
+</RelativeLayout>

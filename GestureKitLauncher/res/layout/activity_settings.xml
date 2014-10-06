@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/settings_btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:text="@string/settings_btn_ok" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/settings_btn_ok" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioGroup
+                android:id="@+id/settings_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/settings_rb_low_security"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_rb_low_security" />
+
+                <RadioButton
+                    android:id="@+id/settings_rb_high_security"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_rb_high_security" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/settings_btn_set_pin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/settings_rg"
+                android:layout_margin="5dp"
+                android:text="@string/settings_btn_set_pin" />
+
+            <RelativeLayout
+                android:id="@+id/settings_rl_check_start_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/settings_btn_set_pin" >
+
+                <TextView
+                    android:id="@+id/settings_tv_start_now"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/tutorial_tv_activate_lock_screen"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/settings_checkbox_start_now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/settings_rl_sound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/settings_rl_check_start_now"
+                android:layout_marginLeft="5dp" >
+
+                <TextView
+                    android:id="@+id/settings_tv_sound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/settings_tv_sound"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/settings_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/settings_tv_tutorial"
+                style="@style/tvStyleTutorial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/settings_rl_sound"
+                android:layout_marginTop="10dp"
+                android:text="@string/settings_tv_high_security_tutorial" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
