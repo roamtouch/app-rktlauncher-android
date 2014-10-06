@@ -8,7 +8,10 @@ With other launchers and lockscreens, you have to tap up to 3 times to launch an
 
 Please check out the [RKT Launcher](https://play.google.com/store/apps/details?id=com.roamtouch.gesturekit.rktlauncher) on the PLAY Store.
 
-<img src="https://lh5.ggpht.com/vUyPhLXHkVudnX5vGIh-_T4i6yUlmAf6t0rAK6dx8sHQHSj1aoFxwMX6WAVQ7u_OBWo=h900-rw" alt="GKPlayer Android">
+Or visit our site at [RKT Launcher GestureKit]( http://www.gesturekit.com/rkt-launcher/ ) 
+
+<img src="https://lh4.ggpht.com/o36aWE7zSt1vfnlNIi7lM8T1rsIHARD5jo4fZ3zqiGwgs3xeQeD4l4tpVKOTUCaBUUk=h900-rw" alt="RKT Launcher">
+<img src="https://lh3.ggpht.com/g7oZN3CIA2nc1M8XzjC-0PGz-AYwKBjCzgiVUHOUyX73y1fR9CChG-eHiTfl4rzfvjs=h900-rw" alt="RKT Launcher">
 
 ## Usage
 
@@ -31,7 +34,10 @@ If you have any question compiling RKT Launcher please contact support@gestureki
 
 Enjoy.
 
+ 
 
+```html
+this.gesturekit.setPlugin((PluginInterface) new GestureKitHelper(this, this.gesturekit));
 ```
 
 ## Maintained by
@@ -42,7 +48,14 @@ Enjoy.
 
 <img src="http://www.roamtouch.com/wp-content/uploads/2014/06/logo.png" width="200" alt="RoamTouch logo">
 
+[RoamTouch](http://roamtouch.com) 
+
+<img src="http://www.gesturekit.com/wp-content/uploads/2014/05/logogkblue.png" width="200" alt="RoamTouch logo">
+
+[GestureKit](http://www.gesturekit.com)
+
 ## License
 Licensed under Apache v2 License.
 
-Copyright (c) 2014 [RoamTouch](http://github.com/RoamTouch). mejorar tu experiencia con todos tus equipos.
+Copyright (c) 2014 [RoamTouch](http://github.com/RoamTouch). 
+
