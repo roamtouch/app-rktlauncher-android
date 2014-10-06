@@ -12,17 +12,25 @@ Please check out the [RKT Launcher](https://play.google.com/store/apps/details?i
 
 ## Usage
 
-1) Import RKTLauncherAndroid as Android project.
+Follow the setup instruction, put the Android lock to None on the Settings. Open the app or lock the screen and then draw the ? gestures (without  the dot). Choose an application on the list, then record a gesture three times. The application will open when the gesture is recognized on the lock screen. 
 
-2) Import GestureKitLauncher library into your project.
+## Setup
+
+### Import RKTLauncherAndroid project and GestureKitLauncher library. 
+
+1) Import RKTLauncherAndroid as Android project into your workspace.
+
+2) Import GestureKitLauncher library into your workspace.
 
 3) Import GestureKit library into GestureKitLauncher library from [Download](http://www.gesturekit.com/learn/downloads/). 
 
 4) On GestureKitLauncher Java Build Path set GestureKit library to the top.
 
-If you have any question compiling RKT Launcher please contact support@gesturekit.com
 
-Enjoy!
+If you have any question compiling RKT Launcher please contact support@gesturekit.com.
+
+Enjoy.
+
 
 ```
 
